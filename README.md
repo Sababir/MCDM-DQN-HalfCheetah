@@ -6,8 +6,7 @@ The proposed framework, **MCDM-DQN (VIKOR)**, integrates four replay prioritizat
 
 ##  Repository Contents
 
-- `setup_environment.py`: Script to install and configure MuJoCo and Gymnasium in Google Colab.
-- `halfcheetah_experiment.py`: The main script to train the models and reproduce the results reported in Section 4.9.5.
+- `MCDM_DQN.ipynb`: The main Jupyter Notebook containing both the setup instructions (MuJoCo installation) and the full experiment code (training, evaluation, and statistical analysis).
 - `README.md`: This file.
 
 ##  Requirements
@@ -18,15 +17,11 @@ The code was developed and tested with the following environment:
 - **Gymnasium**: 0.29.1 (with MuJoCo support)
 - **Hardware**: Runs efficiently on CPU (Intel Core i5, 12 GB RAM) without GPU acceleration.
 
-Other required libraries (such as NumPy, Pandas, SciPy, Matplotlib) are standard in Google Colab and can be installed via `pip` if running locally.
+##  How to Run (in Google Colab)
 
-## How to Run (in Google Colab)
-
-1. **Setup the environment**:
-   Open a new notebook in Google Colab and run the commands in `setup_environment.py` to install the required system dependencies and MuJoCo.
-
-2. **Run the experiment**:
-   Copy the contents of `halfcheetah_experiment.py` into a new cell and run it. The script will train the DQN, PER, and MCDM-DQN models for 10 independent runs. It will automatically generate and save the raw data (Excel files) and statistical reports in a local directory, and trigger a download of the results at the end of the run.
+1. Open `MCDM_DQN.ipynb` in Google Colab.
+2. Run the first cell to install and configure MuJoCo and Gymnasium (if you haven't installed them yet).
+3. Run the subsequent cells to train the DQN, PER, and MCDM-DQN models for 10 independent runs. The notebook will automatically generate and save the raw data (Excel files) and statistical reports, and trigger a download of the results at the end.
 
 ##  Reproducibility
 
@@ -35,7 +30,7 @@ To ensure full reproducibility of the results reported in Section 4.9.5:
 - All models share identical hyperparameters, network architectures, and replay buffer capacities.
 - The specific configurations for the MCDM-DQN are detailed in the manuscript (Section 4.2).
 
-##  Citation
+## 📝 Citation
 
 If you use this code in your research, please cite our manuscript:
 *(Citation details will be added upon publication)*
