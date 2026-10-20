@@ -21,7 +21,7 @@ The code was developed and tested with the following environment:
 
 1. Open `MCDM_DQN.ipynb` in Google Colab.
 2. Run the first cell to install and configure MuJoCo and Gymnasium (if you haven't installed them yet).
-3. Run the subsequent cells to train the DQN, PER, and MCDM-DQN models for 10 independent runs. The notebook will automatically generate and save the raw data (Excel files) and statistical reports, and trigger a download of the results at the end.
+3. Run the subsequent cells to train the proposed MCDM-DQN model for 10 independent runs. The notebook will automatically generate and save the raw data (Excel files) and statistical reports, and trigger a download of the results at the end.
 
 ##  Reproducibility
 
